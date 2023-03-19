@@ -72,4 +72,6 @@ $( document ).ready(function() {
     // notification icon blink
     blink();
 
+    console.log('test');
+
 });
