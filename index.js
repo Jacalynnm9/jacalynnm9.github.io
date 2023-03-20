@@ -24,7 +24,7 @@ $('.modal-button.intro').click( function () {
 
 //portfolio section modals
 $('#what-i-do').click( function () {
-  $('.what-i-do.modal-container').css('display','block');
+  $('.what-i-do.modal-container').css('display','block').addClass('active');
   setTimeout( function (){
     $('.what-i-do #slide-up').addClass('show');
   }, 250);
@@ -50,7 +50,7 @@ $('#about-me').click( function () {
 
 // close modal button
 $('.modal .close').click( function () {
-  $(this).parent().parent().parent('.main-bg .modal-container').css('display','none');
+  $(this).parent().parent().parent('.main-bg .modal-container').css('display','none').removeClass('active');
   $(this).parent().parent('.modal').removeClass('show');
 });
 
