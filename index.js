@@ -30,7 +30,7 @@ $('#what-i-do').click( function () {
   }, 250);
 })
 $('#my-skills').click( function () {
-  $('.my-skills.modal-container').css('display','block');
+  $('.my-skills.modal-container').css('display','block').addClass('active');
   setTimeout( function (){
     $('.my-skills #slide-up').addClass('show');
   }, 250);
