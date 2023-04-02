@@ -171,7 +171,6 @@
     position: absolute;
     left: -500px;
     max-width: 1000px;
-    /* height: calc(100% - 120px); */
     transition: none;
     visibility: hidden;
     top: 100%;
@@ -185,6 +184,15 @@
     top: 50%;
     transform: translateY(-50%) scale(1);
     visibility: visible;
+  }
+
+  .modal#slide-up.hide {
+    transition: .5s ease;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(50%) scale(0);
+    visibility: none;
   }
   
   .modal .modal-body{
@@ -226,6 +234,7 @@
     font-family: 'Roboto Mono', monospace;
     max-width: 100px;
     margin-top: 3px;
+    font-size: 18px;
   }
   
   /* Top and bottom bars */
@@ -286,7 +295,7 @@
   
   #displayDate{
     color: #FFF;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Roboto Mono', monospace;
   }
   
@@ -403,6 +412,7 @@
   margin-top: 20px;
   padding: 0 20px;
   align-items: flex-start;
+  min-height: 300px;
 }
 
 .my-skills .drop-list ul {
@@ -434,13 +444,11 @@
   width: 30%;
 } 
 
-.my-skills.active .skill-list .drop-list{
+.my-skills .skill-list .drop-list{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  opacity: 0;
   position: relative;
-  top:-30px;
-  animation: slideDown ease 2s forwards .7s;
   z-index: 0;
+  display: none;
 }
 
 /* Clouds */
