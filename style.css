@@ -338,7 +338,7 @@
     opacity: 0;
     position: relative;
     left:-30px;
-    animation: slideIn ease 2s forwards .7s;
+    animation: slideIn ease 1s forwards .7s;
     z-index: 0;
   }
 
@@ -354,7 +354,7 @@
   .what-i-do .do-icon {
     width: 100px;
     height: 100px;
-    background-color: var(--blue-bright);
+    background-color: #333;
     text-align: center;
     position: relative;
     border-radius: 5px;
@@ -386,7 +386,8 @@
     margin: 0 0 10px;
   }
 
-  .what-i-do-desc {
+  .what-i-do-desc,
+  .subtitle {
     text-align: left;
     padding: 25px 0;
     font-size: 18px;
@@ -449,6 +450,53 @@
   position: relative;
   z-index: 0;
   display: none;
+}
+
+/* About me */
+.profile-img {
+  border-radius: 50%;
+  max-height: 250px;
+}
+
+.about-me .two-blocks {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.about-me .two-blocks>div {
+  flex: 1;
+  padding: 10px;
+}
+
+.about-me .big-inner-headline{
+  margin-bottom: 10px;
+}
+
+.about-me .two-blocks .about-me-blurb{
+  padding: 20px;
+  text-align: left;
+  background-color: #333;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #FFF;
+}
+
+.about-me.active .about-me-blurb {
+  opacity: 0;
+  position: relative;
+  left:-30px;
+  animation: slideIn ease 1s forwards .7s;
+}
+
+.about-me .subtitle{
+  text-align: center;
+  padding: 0;
+}
+
+.about-me .subtitle .emoticon{
+  font-style: normal;
+  font-weight: 700;
 }
 
 /* Clouds */
