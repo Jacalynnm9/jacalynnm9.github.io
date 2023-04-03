@@ -51,7 +51,7 @@ $('#my-work').click( function () {
   }, 250);
 })
 $('#about-me').click( function () {
-  $('.about-me.modal-container').css('display','block');
+  $('.about-me.modal-container').css('display','block').addClass('active');
   $('.about-me #slide-up').removeClass('hide');
   setTimeout( function (){
     $('.about-me #slide-up').addClass('show');
