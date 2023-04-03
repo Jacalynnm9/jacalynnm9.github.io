@@ -163,7 +163,7 @@
   
   .intro .modal#slide-up {
     left: -500px;
-    width: 500px;
+    max-width: 500px;
     height: auto;
   }
   
@@ -245,6 +245,7 @@
     top: 0;
     width: 100%;
     z-index: 1;
+    white-space: nowrap;
   }
   
   .top-bar-nav {
@@ -652,5 +653,44 @@
 @keyframes slideIn {
   0% {transform: translateX(0);}
   100% {transform: translateX(30px);opacity:1;}
+}
+
+
+/*mobile styling*/
+@media(max-width: 920px){
+  .false-search{
+    display: none;
+  }
+
+  .top-bar-nav li{
+    color: transparent;
+  }
+
+  .modal .modal-body{
+    max-height: calc(100vh - 200px);
+  }
+
+  .what-i-do .modal-body,
+  .my-skills .skill-lists-container,
+  .about-me .two-blocks{
+    flex-direction: column;
+  }
+
+  .big-inner-headline{
+    font-size: 50px;
+  }
+
+  .what-i-do-info{
+    padding: 20px 0;
+  }
+
+  .my-skills.active .skill-list{
+    width: 100%;
+    margin-bottom:20px;
+  }
+
+  .about-me .two-blocks{
+    padding: 20px;
+  }
 }
   
