@@ -4,6 +4,7 @@
   --purple-pastel-bright: #d1c3ff;
   --purple-bright: #c596d7;
   --purple-mid: #a67db5;
+  --purple-mid-dark: #745980;
   --purple-dark: #48374f;
   --pink-bubblegum: #eaafdb;
   --pink-bubblegum-dusty: #E5BACE;
@@ -309,10 +310,10 @@
     bottom: 60px;
     left: 38px;
     font-size: 40px;
-    background-color: orange;
+    background-color: #DFFF00;
     padding: 0 25px;
     border-radius: 10px;
-    color: #FFF;
+    color: var(--purple-mid-dark);
     filter: drop-shadow(0 0 3px #FFF);
   }
   
@@ -321,10 +322,10 @@
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 15px solid orange;
+    border-top: 15px solid #DFFF00;
     position: absolute;
     border-radius: 5px;
-    left: 8px;
+    left: 15px;
     bottom: -10px;
   }
   
@@ -405,7 +406,7 @@
   margin: 0;
   color: var(--pink-bubblegum-dusty);
   font-weight: 600;
-  text-shadow: -0.5vmin 0.5vmin 0 #745980;
+  text-shadow: -0.5vmin 0.5vmin 0 var(--purple-mid-dark);
   text-align: left;
 }
 
@@ -462,13 +463,16 @@
   max-height: 250px;
 }
 
-.about-me .two-blocks {
-  display: flex;
-  align-items: center;
+.about-me .two-blocks{
   padding: 20px 50px;
 }
 
-.about-me .two-blocks>div {
+.two-blocks {
+  display: flex;
+  align-items: center;
+}
+
+.two-blocks>div {
   flex: 1;
   padding: 10px;
 }
@@ -502,6 +506,83 @@
   font-style: normal;
   font-weight: 700;
 }
+
+/* Work and examples */
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px; 
+  margin: 20px 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.flip-card-back {
+  background-color: #333;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: left;
+  padding: 20px;
+}
+
+.flip-card-back p span{
+  font-weight: 700;
+}
+
+.company-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.flip-card img {
+  object-fit: contain;
+  height: 250px;
+  width: 250px;
+  background-color: #FFF;
+}
+
+.flip-card img.redsox{
+  object-fit: cover;
+}
+
+.flip-card img.vw{
+  background-color: #fad000;
+}
+
+
+.flip-card-back{
+  height: 250px;
+  width: 250px;
+}
+/* END: Work and examples */
 
 /* Clouds */
 #cloud-container {
@@ -675,7 +756,7 @@
 
   .what-i-do .modal-body,
   .my-skills .skill-lists-container,
-  .about-me .two-blocks{
+  .two-blocks{
     flex-direction: column;
   }
 
