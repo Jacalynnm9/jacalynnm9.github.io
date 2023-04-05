@@ -396,7 +396,7 @@
     text-align: left;
     padding: 25px 0;
     font-size: 18px;
-    color: var(--purple-mid);
+    color: var(--purple-mid-dark);
     font-style: italic;
 }
 
@@ -554,6 +554,10 @@
 
 .flip-card-back p span{
   font-weight: 700;
+}
+
+.flip-card-back p{
+  margin-top: 0;
 }
 
 .company-cards {
