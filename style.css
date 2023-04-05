@@ -86,7 +86,7 @@
     font-family: 'Sarpanch', sans-serif;
     font-size: 54px;
     margin: 0;
-    padding: 30px;
+    padding: 30px 30px 60px 30px;
     color: var(--pink-bubblegum-dusty);
     font-weight: 600;
     text-shadow: -0.5vmin 0.5vmin 0 #745980;
@@ -145,8 +145,8 @@
   
   .modal-button {
     position: absolute;
-    right: 30px;
-    bottom: 30px;
+    right: 20px;
+    bottom: 20px;
     border: 2px solid var(--purple-bright);
     padding: 5px;
     background-color: #FFF;
@@ -201,6 +201,7 @@
   
   .modal .modal-body{
     overflow-y: auto;
+    overflow-x: hidden;
     max-height: calc(100vh - 150px);
     padding: 20px;
   }
