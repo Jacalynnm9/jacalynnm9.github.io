@@ -309,7 +309,7 @@
     position: absolute;
     z-index: 3;
     bottom: 60px;
-    left: 38px;
+    left: 10px;
     font-size: 40px;
     background-color: #DFFF00;
     padding: 0 25px;
@@ -326,7 +326,7 @@
     border-top: 15px solid #DFFF00;
     position: absolute;
     border-radius: 5px;
-    left: 15px;
+    left: 5px;
     bottom: -10px;
   }
   
@@ -360,7 +360,7 @@
   .what-i-do .do-icon {
     width: 100px;
     height: 100px;
-    background-color: var(--purple-dark);
+    background-color: #333;
     text-align: center;
     position: relative;
     border-radius: 5px;
@@ -434,7 +434,7 @@
 }
 
 .my-skills .skill-list .title{
-  background-color: var(--purple-dark);
+  background-color: #333;
   color: #FFF;
   font-size: 20px;
   border-top-left-radius: 10px;
@@ -485,7 +485,7 @@
 .about-me .two-blocks .about-me-blurb{
   padding: 20px;
   text-align: left;
-  background-color: var(--purple-dark);
+  background-color: #333;
   border-radius: 5px;
   font-size: 18px;
   color: #FFF;
@@ -766,7 +766,7 @@
   }
 
   .big-inner-headline{
-    font-size: 65px;
+    font-size: 55px;
   }
 
   .what-i-do-info{
